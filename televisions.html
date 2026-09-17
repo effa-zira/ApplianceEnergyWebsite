@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Televisions - Appliance Energy Consumption</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- PapaParse to read the CSV file from KNIME -->
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <nav>
+        <a href="index.html">
+            <img src="logo.png" alt="Power Logo" class="logo">
+        </a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="televisions.html" class="active">Televisions</a></li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Television Energy Consumption Data</h1>
+        <p>The table below shows television models available in the Australian market and their energy consumption.</p>
+        
+        <!-- Data will be loaded here by script.js -->
+        <div id="data-container">Loading data...</div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 [Your Name]. All rights reserved.</p>
+        <p>GenAI Acknowledgement: This website was built with assistance from GitHub Copilot for code generation and debugging.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
