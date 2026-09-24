@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Televisions - Appliance Energy Consumption</title>
     <link rel="stylesheet" href="style.css">
-    <!-- PapaParse to read the CSV file from KNIME -->
-    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
 </head>
 <body>
     <!-- Navigation Menu -->
@@ -23,17 +21,44 @@
 
     <main>
         <h1>Television Energy Consumption Data</h1>
-        <p>The table below shows television models available in the Australian market and their energy consumption.</p>
+        <p>This page visualizes the cleaned data from our KNIME workflow, showing the energy consumption patterns of televisions available in the Australian market.</p>
         
-        <!-- Data will be loaded here by script.js -->
-        <div id="data-container">Loading data...</div>
+        <!-- Chart 1: Screen Technology Distribution (Pie Chart) -->
+        <div class="info-box">
+            <h2>Screen Technology Distribution</h2>
+            <p>Which screen technologies are most common in the Australian market?</p>
+            <!-- Replace 'chart1.png' with the actual filename of your Pie Chart image -->
+            <img src="chart1.png" alt="Pie chart showing TV screen technology distribution" class="chart-image">
+        </div>
+
+        <!-- Chart 2: Power Consumption by Brand (Bar Chart) -->
+        <div class="info-box">
+            <h2>Average Power Consumption by Brand</h2>
+            <p>Comparing the average energy consumption across different TV brands.</p>
+            <!-- Replace 'chart2.png' with the actual filename of your Bar Chart image -->
+            <img src="chart2.png" alt="Bar chart of power consumption by brand" class="chart-image">
+        </div>
+
+        <!-- Chart 3: Screen Size vs Power Use (Scatter Plot) -->
+        <div class="info-box">
+            <h2>Screen Size vs. Power Consumption</h2>
+            <p>Investigating the relationship between physical screen size and energy consumption.</p>
+            <!-- Replace 'chart3.png' with the actual filename of your Scatter Plot image -->
+            <img src="chart3.png" alt="Scatter plot of screen size vs power consumption" class="chart-image">
+        </div>
+
+        <!-- Chart 4: Star Rating Distribution (Optional - if you have one) -->
+        <div class="info-box">
+            <h2>Star Rating Distribution</h2>
+            <p>How do TV models rate on the Australian energy star rating system?</p>
+            <!-- Replace 'chart4.png' with the actual filename of your Star Rating Chart image -->
+            <img src="chart4.png" alt="Chart showing star rating distribution" class="chart-image">
+        </div>
     </main>
 
     <footer>
-        <p>&copy; 2026 [Your Name]. All rights reserved.</p>
+        <p>&copy; 2026 Effa Azzira. All rights reserved.</p>
         <p>GenAI Acknowledgement: This website was built with assistance from GitHub Copilot for code generation and debugging.</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
